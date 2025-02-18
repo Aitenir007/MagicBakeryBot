@@ -8,6 +8,7 @@ load_dotenv()
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 
+
 client = openai.OpenAI(api_key=OPENAI_API_KEY)
 
 async def chat_with_ai(prompt):
